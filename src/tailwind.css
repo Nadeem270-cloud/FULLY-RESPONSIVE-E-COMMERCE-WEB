@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: Manrope, sans-serif;
+}

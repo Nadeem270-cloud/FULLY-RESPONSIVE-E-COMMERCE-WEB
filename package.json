@@ -1,0 +1,33 @@
+{
+  "name": "aurora-commerce",
+  "version": "1.0.0",
+  "description": "Premium full-stack ecommerce experience",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./public/assets/tailwind.css --minify",
+    "copy:flowbite": "node scripts/copy-flowbite.js",
+    "build": "npm run build:css && npm run copy:flowbite",
+    "predev": "npm run build",
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "razorpay": "^2.9.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.0",
+    "flowbite": "^4.0.2",
+    "tailwindcss": "^4.3.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

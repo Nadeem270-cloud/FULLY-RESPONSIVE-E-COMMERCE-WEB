@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="Objects for a life well considered. Discover the Aurora collection of considered design, sound, and everyday essentials.">
+  <title>Aurora — Objects for a life well considered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/tailwind.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/assets/flowbite.min.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span>THE OBJECTS EDIT — VOL. 04</span><span>Complimentary shipping over ₹5,000</span><a href="#shop">Discover the collection <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Aurora home">aurora<span>®</span></a>
+    <button class="mobile-menu icon-button" id="mobile-menu" aria-label="Open menu" aria-expanded="false"><span class="menu-glyph"></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#story">Our point of view</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" id="search-toggle" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></button>
+      <button class="icon-button account-button" id="account-button" aria-label="Your account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.3"/><path d="M5.2 20c.6-3.5 3.1-5.5 6.8-5.5s6.2 2 6.8 5.5"/></svg></button>
+      <button class="cart-trigger" id="cart-trigger" aria-label="Open shopping bag"><svg viewBox="0 0 24 24"><path d="M5 8.5h14l1 12H4l1-12Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span>Bag</span><b id="bag-count">0</b></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow light-eyebrow"><span></span> LESS, BUT BETTER. ALWAYS.</div>
+        <h1>Good things.<br><em>Thoughtfully</em><br>made.</h1>
+        <p>A considered collection of everyday objects that bring a little more meaning to the moments in between.</p>
+        <a class="button button-lime" href="#shop">Explore the collection <span>↗</span></a>
+        <div class="hero-note"><span class="note-mark">✳</span><span>Designed for living.<br>Made to live with.</span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1500&q=90" alt="Calm, light-filled interior with curated furniture and objects">
+        <div class="hero-image-shade"></div>
+        <div class="hero-caption"><span>THE SLOW LIVING EDIT</span><span>01 — 04</span></div>
+        <div class="hero-orbit"><span>EST. MMXXIV</span><b>✳</b><span>MADE WITH INTENTION</span></div>
+      </div>
+      <div class="hero-bottom"><span>DESIGN THAT FEELS LIKE COMING HOME</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+    <section class="ticker" aria-label="Aurora values"><div class="ticker-track"><span>MADE FOR THE EVERYDAY</span><i>✳</i><span>DESIGNED TO LAST</span><i>✳</i><span>LESS, BUT BETTER</span><i>✳</i><span>MADE FOR THE EVERYDAY</span><i>✳</i><span>DESIGNED TO LAST</span><i>✳</i><span>LESS, BUT BETTER</span><i>✳</i></div></section>
+    <section class="collection section-shell" id="shop">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span></span> THE COLLECTION</div><h2>Everyday,<br><em>elevated.</em></h2></div>
+        <p>Good design doesn't ask for attention.<br>It earns a place in your life.</p>
+      </div>
+      <div class="shop-tools">
+        <div class="category-list" id="category-list" aria-label="Filter by category"></div>
+        <div class="shop-filters"><label class="search-field"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input type="search" id="search-input" placeholder="Find something..." aria-label="Search products"></label><select id="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="rating">Top rated</option></select></div>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="products-footer"><span id="product-count">A FEW GOOD THINGS</span><button class="text-link" id="clear-filters">Clear filters <span>↗</span></button></div>
+    </section>
+    <section class="manifesto" id="story">
+      <div class="manifesto-image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1300&q=85" alt="Thoughtfully furnished minimalist living room"></div>
+      <div class="manifesto-copy"><div class="eyebrow light-eyebrow"><span></span> A DIFFERENT KIND OF MORE</div><h2>Buy fewer.<br><em>Love longer.</em></h2><p>We believe the things you live with should feel as good on day one thousand as they did on day one. That's why we look for honest materials, lasting forms, and makers who care about the details.</p><a class="button button-outline" href="#collections">A little about us <span>↗</span></a><div class="manifesto-stamp">A<br>✳<br>O</div></div>
+    </section>
+    <section class="categories section-shell" id="collections">
+      <div class="categories-heading"><div><div class="eyebrow"><span></span> FIND YOUR SOMETHING</div><h2>Little worlds<br>of their <em>own.</em></h2></div><p>Considered essentials, each with a story worth keeping.</p></div>
+      <div class="category-cards">
+        <button class="category-card" data-category="Living"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt=""><span>01 / THE ART OF HOME</span><b>Living <i>↗</i></b></button>
+        <button class="category-card" data-category="Audio"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80" alt=""><span>02 / SOUND, CONSIDERED</span><b>Audio <i>↗</i></b></button>
+        <button class="category-card" data-category="Watches"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=80" alt=""><span>03 / MADE TO MARK TIME</span><b>Watches <i>↗</i></b></button>
+        <button class="category-card" data-category="Tech"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt=""><span>04 / THOUGHTFUL TECH</span><b>Work & play <i>↗</i></b></button>
+        <button class="category-card" data-category="Fashion"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt=""><span>05 / THE DAILY UNIFORM</span><b>Fashion <i>↗</i></b></button>
+        <button class="category-card" data-category="Accessories"><img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt=""><span>06 / THE DAILY CARRY</span><b>Carry <i>↗</i></b></button>
+        <button class="category-card" data-category="Wellness"><img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80" alt=""><span>07 / A MOMENT TO RESET</span><b>Wellness <i>↗</i></b></button>
+        <button class="category-card" data-category="Kitchen"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt=""><span>08 / SLOWER MORNINGS</span><b>Kitchen <i>↗</i></b></button>
+        <button class="category-card" data-category="Travel"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80" alt=""><span>09 / FOR THE WAY OUT</span><b>Travel <i>↗</i></b></button>
+        <button class="category-card" data-category="Footwear"><img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=900&q=80" alt=""><span>10 / EVERY STEP, CONSIDERED</span><b>Shoes <i>↗</i></b></button>
+        <button class="category-card" data-category="Jewelry"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=80" alt=""><span>11 / LITTLE THINGS, KEPT CLOSE</span><b>Jewelry <i>↗</i></b></button>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter-flower">✳</div><div class="eyebrow light-eyebrow"><span></span> OCCASIONAL, INTENTIONAL</div><h2>A good note.<br><em>Now and then.</em></h2><p>New arrivals, considered thoughts, and the occasional reason to slow down.</p>
+      <form id="newsletter-form"><label for="newsletter-email">Your email address</label><div><input id="newsletter-email" type="email" placeholder="you@example.com" required><button aria-label="Subscribe">↗</button></div></form>
+      <small>NO NOISE. UNSUBSCRIBE WHENEVER.</small>
+    </section>
+    <section class="values-strip"><div><b>01</b><span>Made with intention</span><p>Thoughtful by design.<br>Never just for show.</p></div><div><b>02</b><span>Good things, kept</span><p>Better materials.<br>Longer relationships.</p></div><div><b>03</b><span>A little more human</span><p>Real people, here<br>when you need us.</p></div></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#top">aurora<span>®</span></a><p>Objects for a life well considered.</p><div><a href="#shop">Shop</a><a href="#story">Our point of view</a><a href="mailto:hello@aurora.example">Get in touch</a></div><small>© <span id="year"></span> AURORA STUDIO. MADE TO LIVE WITH.</small></footer>
+
+  <div class="drawer-scrim" id="drawer-scrim"></div>
+  <aside class="side-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-head"><div><span class="eyebrow">YOUR SELECTION</span><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="icon-button close-drawer" aria-label="Close bag">×</button></div><div class="drawer-content" id="cart-content"></div><div class="drawer-footer" id="cart-footer"></div></aside>
+  <div class="modal-backdrop" id="modal-backdrop" role="presentation"><section class="dialog" id="dialog" role="dialog" aria-modal="true" aria-label="Aurora dialog"><button class="icon-button dialog-close" id="dialog-close" aria-label="Close">×</button><div id="dialog-content"></div></section></div>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+</body>
+</html>
