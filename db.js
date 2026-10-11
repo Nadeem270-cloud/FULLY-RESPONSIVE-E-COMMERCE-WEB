@@ -1,8 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-
-const dataDir = path.join(__dirname, 'data');
+const dataDir = process.env.VERCEL ? '/tmp' : path.join(__dirname, 'data');
 const file = path.join(dataDir, 'store.json');
 const id = () => crypto.randomUUID();
 const now = () => new Date().toISOString();
